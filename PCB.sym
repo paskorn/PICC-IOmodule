@@ -1,0 +1,237 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+014.5   SSPEN
+014.6   SSPOV
+014.7   WCOL
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028-029 strtok.save
+02A-02D _Randseed
+02E     inputCursor
+02F     slaveState
+030     input
+031     cmd
+032     gblDisplayBufferIndex
+033     gblDisplayModuleCursorPos
+034.0   gblTimeToUpdateScreen
+035-055 curText
+056     gblNewLCDPos
+057-058 gblDisplayValue
+059-05E valueBuffer
+05F     gblSensorBufferHi
+060     gblSensorBufferLow
+061-070 gblSensorValues
+071     gblSensorTimeout
+072     gblUpdatedSensors
+073     gblLastSensorReceived
+074     tenThousands
+075     thousands
+076     hundreds
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B-07E gblDirtyBits
+07F     @INTERRUPT_AREA
+0A0     tens
+0A1     ones
+0A2     @I2C_STATE
+0A3-0A4 @sprintf_string
+0A5-0A6 MAIN.val_adc
+0A7-0AE MAIN.ch
+0AF-0B0 show_adc.val_adc
+0AF     read_analog.channel
+0AF     @delay_ms1.P1
+0B0     read_analog_mcp.channel
+0B1     show_adc.line
+0B1     read_analog_mcp.mode
+0B2     read_analog_mcp.l
+0B2     show_adc.ch
+0B3-0B4 read_analog_mcp.h
+0B3     show_adc.dis0
+0B4     show_adc.dis1
+0B5     show_adc.dis2
+0B5     read_analog_mcp.ctrl_bits
+0B6     write_adc_byte.data_byte
+0B6     read_adc_byte.number_of_bits
+0B6     show_adc.dis3
+0B6     @delay_us1.P1
+0B6     read_analog_mcp.@SCRATCH1
+0B7     read_adc_byte.i
+0B7     write_adc_byte.number_of_bits
+0B7     show_adc.dis4
+0B7     read_analog_mcp.@SCRATCH2
+0B8     setPosition.pos
+0B8     write_adc_byte.i
+0B8     read_adc_byte.data
+0B8     updateScreen.@SCRATCH1
+0B8     show_adc.@SCRATCH1
+0B9     type.text
+0B9     write_adc_byte.@SCRATCH1
+0B9     setPosition.@SCRATCH1
+0B9     show_adc.@SCRATCH2
+0BA-0BB @DIV1616.P1
+0BC-0BD @DIV1616.P1
+0BE     @DIV1616.@SCRATCH1
+0BF     ssp_interrupt.i
+0C0     ssp_interrupt.i2cState
+0C1     ssp_interrupt.sensorPort
+0C2     showError.errCode
+0C2-0C3 @PRINTF_LU_419.P1
+0C2     fillBlankSensorsWithDefaultValue.i
+0C2     @I2C_WRITE_1.P1
+0C2     ssp_interrupt.@SCRATCH1
+0C3     showError.data
+0C3     ssp_interrupt.@SCRATCH2
+0C3     fillBlankSensorsWithDefaultValue.@SCRATCH1
+0C4     @PRINTF_U_419.P1
+0C4     @PSTRINGCN7_419.P2
+0C4     ssp_interrupt.@SCRATCH3
+0C4     @PRINTF_LU_419.@SCRATCH1
+0C4     fillBlankSensorsWithDefaultValue.@SCRATCH2
+0C4     clearScreen.@SCRATCH1
+0C5     @PRINTF_U_419.P1
+0C5     @PRINTF_LU_419.@SCRATCH2
+0C5     clearScreen.@SCRATCH2
+0C5     @PSTRINGCN7_419.@SCRATCH1
+0C6     @DIV88.P1
+0C6     @PRINTF_LU_419.@SCRATCH3
+0C6     @PSTRINGCN7_419.@SCRATCH2
+0C7     @DIV88.P1
+0C7     @PRINTF_LU_419.@SCRATCH4
+0C7     @PSTRINGCN7_419.@SCRATCH3
+0C8     @PRINTF_LU_419.@SCRATCH5
+0C8     @PSTRINGCN7_419.@SCRATCH4
+0C8     @DIV88.@SCRATCH1
+0C9     @PRINTF_LU_419.@SCRATCH6
+0CA     @PRINTF_LU_419.@SCRATCH7
+0CB     @SPRINTF.P1
+0FF     @INTERRUPT_AREA
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+045F  @I2C_WRITE_1
+04A4  @delay_ms1
+0525  @delay_us1
+05C0  @DIV1616
+04F7  adc_init
+0568  write_adc_byte
+04FB  read_adc_byte
+0523  read_analog_mcp
+051E  read_analog
+0193  ssp_interrupt
+0085  @SPRINTF
+0257  @PRINTF_LU_419
+0475  timer1_isr
+0064  triggerScreenUpdate
+005F  resetI2C
+0184  submit
+05B1  type
+041A  fillBlankSensorsWithDefaultValue
+0069  clearScreen
+003A  @const425
+00EA  showError
+047E  @const426
+00FB  @PSTRINGCN7_419
+0094  @DIV88
+00AB  @PRINTF_U_419
+0228  showCursor
+018B  hideCursor
+0485  setPosition
+0633  getPosition
+04C4  twoDisplay
+04A0  init
+05F6  updateScreen
+05E7  show_adc
+0800  MAIN
+0800  @cinit1
+0832  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\downloads\PM10\PicC\workADC_LCD\
+
+Project Files:
+    PCB.c                                                   [31-พ.ค.-12 00:40  CRC=40924933]
+    ..\..\..\..\Program Files (x86)\PICC\devices\16F886.H   [04-เม.ย.-12 14:18  CRC=AAA4E837]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.H   [08-มิ.ย.-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h   [16-ก.ค.-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\string.h   [14-ก.ค.-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h    [03-ม.ค.-08 13:55  CRC=2D1F019F]
+    myMCP3208.c                                             [29-พ.ค.-12 23:33  CRC=DA758BA7]
+
+Source signature=86128D21
+
+Units:
+    PCB (main)
+
+Compiler Settings:
+    Processor:      PIC16F886
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      PCB.err
+    Ext Symbols: PCB.esym
+    INHX8:       PCB.hex
+    Symbols:     PCB.sym
+    List:        PCB.lst
+    Debug/COFF:  PCB.cof
+    Project:     PCB.PJT
+    Call Tree:   PCB.tre
+    Statistics:  PCB.STA

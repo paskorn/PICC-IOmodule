@@ -1,0 +1,15 @@
+>>> Warning 203 "PCB.c" Line 534(1,1): Condition always TRUE
+>>> Warning 203 "PCB.c" Line 731(1,1): Condition always TRUE
+>>> Warning 216 "PCB.c" Line 747(0,1): Interrupts disabled during call to prevent re-entrancy:  (hideCursor)
+>>> Warning 202 "C:\downloads\PM10\PicC\workADC_LCD\myMCP3208.c" Line 134(12,13): Variable never used:   d
+>>> Warning 202 "C:\downloads\PM10\PicC\workADC_LCD\myMCP3208.c" Line 134(15,20): Variable never used:   div_h
+>>> Warning 202 "C:\downloads\PM10\PicC\workADC_LCD\myMCP3208.c" Line 134(22,27): Variable never used:   div_l
+>>> Warning 202 "PCB.c" Line 137(9,12): Variable never used:   cmd
+>>> Warning 202 "PCB.c" Line 160(5,17): Variable never used:   tenThousands
+>>> Warning 202 "PCB.c" Line 161(5,14): Variable never used:   thousands
+>>> Warning 202 "PCB.c" Line 162(5,13): Variable never used:   hundreds
+>>> Warning 202 "PCB.c" Line 163(5,9): Variable never used:   tens
+>>> Warning 202 "PCB.c" Line 164(5,9): Variable never used:   ones
+      Memory usage:   ROM=27%      RAM=30% - 38%
+      0 Errors,  12 Warnings.
+Build Successful.
